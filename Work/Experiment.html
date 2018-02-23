@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery experiments</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	
+	function tryingnew (){		
+		var latest = document.getElementById("latest");
+		var oldMessage = latest.innerHTML;
+		latest.innerHTML = oldMessage+"<p>Changed the message to this lol</p>";
+		latest.style.backgroundColor = "#cccc";
+		latest.style.borderWidth = "2px";
+		$("#NRG").fadeIn();
+		$("#SSG").fadeOut();
+		}
+	</script>
+	<script type= "text/javascript">
+	$("document").ready(function()
+		{	
+	$("#NRG").hide();
+	})
+	function tryingnew2()
+	{
+	function switch_format()
+		{
+		var symb = "plus";
+		$('#show_text').html(symb);
+		$('#show_equals').html("equals");
+		}
+	$("document").ready(function()
+		{	
+		$("td").css("color", "blue");
+		$("ul li").css("color", "red");
+		$('#show_text').bind('click', switch_format);
+        $("#NRG").fadeOut();
+		$("#SSG").fadeIn();
+		$("img").resize(150);
+		$("#thumbs").resize(50);
+		})
+		
+		}
+	</script>
+</head>
+<body>
+<noscript>
+	<h3>required JS<h3>
+</noscript>
+	<button id="btn" type="button" onclick="tryingnew()">Function1</button>
+	<button id="btn2" type="button" onclick="tryingnew2()">Function2</button>
+	<div id="latest">
+		<p>This is a random paragraph</p>
+		<p>This is a random paragraph</p>
+		<p>This is a random paragraph</p>
+	</div>
+	
+	<table border=1>
+	<tr><td>NRG</td><td>12</td></tr>
+	<tr><td>Obey</td><td>10</td></tr>
+	<tr><td>SSG</td><td>7</td></tr>
+	<tr><td>Luminosity</td><td>5</td></tr>
+	</table>
+	
+	<ul>
+	<li>itemONE</li>
+	<li>itemTWO</li>
+	</ul>
+	
+	<p>click here for something cool</p>
+	5
+	<span id="show_text">+</span>
+	6
+	<span id="show_equals">=</span>
+	<br />
+	
+	<img id="NRG" src="NRG.png">
+	<img id="SSG" src="SSG.png">
+	<p>Math.random() returns a random number between 0 (included) and 1 (excluded):</p>
+
+	
+	<img src="NRG.png">
+	<img src="SSG.png">
+	<div id="thumbs">
+	<img src="NRG.png">
+	<img src="SSG.png">
+	</div>
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = Math.random();
+</script>
+</body>
+</html>
