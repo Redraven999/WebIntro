@@ -1,0 +1,15 @@
+@import "external.css" ;  
+body {background-color : white} 
+#wrapper { min-height: 100%;  height: auto !important;  height: 100%;  margin: 0 auto -30px;  
+ /* the bottom margin is the negative value of the footer's height */ } 
+#hdr { height: 60px; background : aqua ; border : 0.1em solid black} 
+ 
+#ftr { height: 30px; background : aqua ; border : 0.1em solid black} 
+ 
+#nav { float : left ; width : 110px ; background : yellow ; height : 89.8% ; border : 0.1em solid black} 
+ 
+#ads { float : right ; width : 25% ; background : fuchsia ; height : 89.8% ; border : 0.1em solid black} 
+ 
+#txt { margin : 0 100px ; background : lime ; height : 91% ; border : 0.1em solid black} 
+
+#NRG { height : 100% ; width : 100%}
